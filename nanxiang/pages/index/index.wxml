@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image src='../../image/logo.png'></image>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn1'>
+      <image class='btnImg' src='../../image/wechat.png'></image>
+      <view>登录</view>
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">欢迎您，{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>

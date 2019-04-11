@@ -1,0 +1,179 @@
+page {  
+  min-height: 100%;  
+  background-color:#f6f6f6;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+  width:100%;
+  padding-bottom: 130rpx;
+} 
+.section{
+	background-color: #fff;
+}
+.item{
+	display: flex;
+	justify-content: space-between;
+	margin-left:30rpx;
+	padding:5rpx 30rpx 5rpx 0;
+	line-height:90rpx;
+	border-bottom:1rpx solid #e0e0e0;
+}
+.addre1{
+	margin-left:30rpx;
+    display: flex;
+    justify-content: space-between;
+    padding-top:30rpx;
+	line-height:100rpx;
+}
+.addre2{
+   line-height:60rpx;
+   font-size:27rpx;
+}
+.addre2 .left{
+	display: flex;
+	flex-direction: column;
+	width:90%;
+}
+.addre2 .left .area{
+	float:right;
+}
+.addre2 .left_bottom{
+	padding-left:40rpx;
+	color:#888;
+}
+.left_top image{
+	padding-top:10rpx;
+	margin-right:10rpx;
+}
+.more{
+  width:25rpx;
+  float:right;
+  margin-right:20rpx;
+  padding-top:40rpx;
+}
+ image{
+	width:30rpx;
+}
+.line image{
+	width:100%;
+	height:20rpx;
+}
+.red{
+	color:#e64340;
+}
+.gray{
+	color:#939393;
+}
+.right{
+	display:flex;
+}
+textarea{
+	border: 1rpx solid #e0e0e0;
+	border-radius: 5rpx;
+    width:96%;
+}
+.mark{
+	background-color: #fff;
+	padding:15rpx 0 15rpx 42rpx;
+	line-height:80rpx;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #dfdddd;
+  background-color: #fff;
+  color:#fff;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height: 90rpx;
+}
+.submit view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33rpx;
+  color: black;
+}
+.sub_left{
+  width: 40%;
+}
+.sub_right{
+  width: 60%;
+  background-color: #e91e63;
+}
+.sub_right button{
+  color: #fff;
+  background-color: #e91e63;
+  width: 100%;
+}
+.goodsList{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 10rpx;
+}
+.title{
+  height: 80rpx;
+  border-left: 12rpx solid rgba(255, 0, 0, 0.63);
+  border-bottom: 2rpx solid rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  margin-bottom: 10rpx;
+}
+.title text{
+  font-size: 40rpx;
+  color: rgba(255, 0, 0, 0.63);
+}
+.item{
+  margin: 0;
+  padding: 0;
+  height: 350rpx;
+  display: flex;
+  align-items: center;
+  border: 0;
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
+}
+.item image{
+  height: 350rpx;
+  width: 320rpx;
+  overflow: hidden;
+}
+.goodMsg{
+  height: 350rpx;
+  width: 100%;
+  padding: 0rpx 20rpx;
+}
+.goodName{
+  font-size: 44rpx;
+}
+.price{
+  height: 140rpx;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.msg{
+  height: 50rpx;
+  display: flex;
+  padding-right: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.m{
+  color: rgba(255, 0, 0, 0.63);
+  font-size: 38rpx;
+}
+.totalPrice{
+  margin-top: 20rpx;
+  background-color: #fff;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  padding: 0rpx 40rpx;
+  justify-content: space-between;
+}
+.totalPrice text{
+  font-size: 38rpx;
+}

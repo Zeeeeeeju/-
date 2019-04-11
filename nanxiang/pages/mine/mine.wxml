@@ -1,0 +1,45 @@
+<!--pages/mine/mine.wxml-->
+<scroll-view>
+  <view class='mine'>
+    <view class='contain'>
+      <image src='../../image/postbg.jpg'></image>
+    </view>
+    <view class='headIcon'>
+      <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class='info'>
+      <text>{{nickName}}</text>
+      <!-- <button hidden='{{hasBindTel}}'>绑定手机号</button> -->
+    </view>
+  </view>
+  <view class='itemList'>
+    <navigator url="../chooseAddre/chooseAddre" hover-class="navigator-hover">
+      <view class='item'>
+        <view class='item_left'>
+          <image src='../../image/location.png'></image>
+          <text>收货地址</text>
+        </view>
+        <image src='../../image/right.png'></image>
+      </view>
+    </navigator>
+    <navigator url="../order/order" hover-class="navigator-hover" open-type='switchTab'>
+      <view class='item'>
+        <view class='item_left'>
+          <image src='../../image/order.png'></image>
+          <text>我的订单</text>
+        </view>
+        <image src='../../image/right.png'></image>
+      </view>
+    </navigator>
+    <navigator url="../shopcart/shopcart" hover-class="navigator-hover" open-type='switchTab'>
+      <view class='item'>
+        <view class='item_left'>
+          <image src='../../image/cart.png'></image>
+          <text>购物车</text>
+        </view>
+        <image src='../../image/right.png'></image>
+      </view>
+    </navigator>
+    
+  </view>
+</scroll-view>

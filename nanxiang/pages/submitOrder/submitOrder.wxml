@@ -1,0 +1,67 @@
+<scroll-view>
+<form bindsubmit="formSubmit" report-submit="true">
+<view class = "section">
+<view class = "addre1" bindtap = "toChooseAddre" style="display:{{display1}} ">
+  <view class = "left">
+    <image src="../../image/map.jpg" 
+    mode = "widthFix"/><text class = "red">选择您的地址</text>
+  </view>
+  <view class = "right">
+      <image class="more" src = "../../image/right.png"
+    mode = "widthFix" />
+  </view>
+  </view>
+<view class = "addre1 addre2" bindtap = "toChooseAddre"  style="display:{{display2}} "  >
+
+  <view class = "left">
+  <view class="left_top">
+  <image src="../../image/map2.png" 
+    mode = "widthFix"/>
+    {{name}}　{{tel}}
+    </view>
+    <view class = "left_bottom">
+      地址：{{addreRange[addre]}}{{door}}
+    </view>
+  </view>
+  <view class = "right">
+    <image class="more" src = "../../image/right.png"
+    mode = "widthFix" />
+  </view>
+</view>
+
+<view class = "line"><image src = "../../image/line.jpg" mode="aspectFit" repeat = "repeat"/></view>
+</view>
+<view class='goodsList'>
+  <view class='title'>
+    <text>商品信息</text>
+  </view>
+  <view class='item' wx:for="{{goodsList}}">
+    <image src='{{item.image}}'></image>
+    <view class='goodMsg'>
+      <view><text class='goodName'>{{item.title}}</text></view>
+      <view><text>{{item.pro_name}}</text></view>
+      <view class='price'>
+        <view class='msg'>
+          <text class='m'>¥{{item.price}}</text>
+          <text>x{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class='totalPrice'>
+  <text>花款：</text>  
+  <text style='color:rgba(255, 0, 0, 0.63)'>¥{{totalPrice}}</text>  
+</view>
+<!-- <button class = "submit"  formType="submit">立即预定</button> -->
+<view class='submit'>
+  <view class='sub_left'>
+    <text>合计：<text style='color:rgba(255, 0, 0, 0.63)'>¥{{totalPrice}}</text></text>
+  </view>
+  <view class='sub_right'>
+    <button formType="submit">立即购买</button>
+  </view>
+</view>
+ </form>
+ </scroll-view>

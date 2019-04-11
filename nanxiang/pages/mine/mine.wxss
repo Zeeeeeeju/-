@@ -1,0 +1,63 @@
+/* pages/mine/mine.wxss */
+.mine{
+  background-color: #fff;
+  /* height: 500rpx; */
+  border-top: 3rpx solid #f5f5f5;
+}
+.contain{
+  height: 250rpx;
+  overflow: hidden;
+}
+.contain image{
+  width: 100%;
+}
+.headIcon{
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.headIcon image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius:50%;
+  border: rgba(255,255,255,.4) 4px solid;
+  margin-top: -130rpx;
+}
+.info{
+  display: flex;
+  justify-content: space-around;
+  height: 120rpx;
+  flex-direction: column;
+  align-items: center;
+}
+.info button{
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  background-color: #495A8F;
+  color: #fff;
+}
+.itemList{
+  margin-top: 20rpx;
+  background-color: #fff;
+  /* height: 500rpx; */
+}
+.item{
+  height:100rpx;
+  border-bottom: 3rpx solid #d4d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 30rpx;
+}
+.item image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.item_left{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 40rpx;
+}

@@ -1,0 +1,41 @@
+<!--pages/order/order.wxml-->
+<scroll-view>
+<view class='{{non ?"non_show":"non_hide"}}'>
+  <text>订单列表为空</text>
+</view>
+<view bindtap="toOrderDetail" class="orderDetails" data-orderid='{{item.orderId}}' wx:for="{{orderDetailList}}" wx:for-index="index">
+	<view class="orderListTitle">
+		<text class='orderNum'>订单号：<text style='color:red'>{{item.orderId}}</text></text>
+		<text class="orderStatus"><text style='color:black'>状态:</text>下单成功</text>
+	</view>
+	<view class="orderListDetails">
+  <view wx:for-index="key"  wx:for-item="value">
+    <view class='item' wx:for="{{orderDetailList[index].data}}">
+      <view><text>产品名：{{item.title}}</text></view>
+      <view><text>规格：{{item.size}}</text></view>
+      <view class='pp'><text>单价：¥{{item.price}}</text><text>x{{item.num}}</text></view>
+    </view>
+  </view>
+	</view>
+	<view class="productCount">
+		<text></text>
+      <text>查看更多</text>
+	</view>
+</view>
+</scroll-view>
+
+<!-- <scroll-view> -->
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view class='orderNumber'>订单号：{{orderDetail.orderId}}</view>
+      <view class="productInfo">
+        <view class="productTitle">收货人：{{orderDetail.name}}</view>
+        <view class="productTitle">手机号：{{orderDetail.tel}}</view>
+        <view class="productTitle">收货地址：{{orderDetail.address}}</view>
+        <view class="productTitle">下单时间：{{orderDetail.create_time}}</view>
+        <view class="productTitle">订单状态：{{orderDetail.state}}</view>
+      </view>
+  </view>
+</view>
+<!-- </scroll-view> -->

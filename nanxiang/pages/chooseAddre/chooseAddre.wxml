@@ -1,0 +1,21 @@
+<scroll-view>
+<view class = "item" wx:for="{{list}}" wx:for-index="index">
+  <!-- <image src ="{{item.image}}"  mode = "widthFix"/> -->
+<view class = "info" bindtap="choose" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}" data-area="{{item.area}}" data-addre="{{item.addre}}" data-door="{{item.door}}">
+<text>收货人：{{item.name}}</text>
+<text>电话：{{item.tel}}</text>
+<text>地址：{{addreRange[item.addre]}}{{item.door}}</text>
+</view>
+<view class = "modify" bindtap="toModifyAddre" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}" data-area="{{item.area}}" data-addre="{{item.addre}}"  data-door="{{item.door}}">
+<image src = "../../image/modify.png"
+    mode = "widthFix" bindtap = "detete"/>
+</view>
+</view>
+
+<view class = "add" bindtap = "addAddre">
+	<image  class = "left"src = "../../image/6.png"
+    mode = "widthFix" /><view class = "text">新增个人地址</view>
+    <image class="right" src = "../../image/right.png"
+    mode = "widthFix" />
+</view>
+</scroll-view>
