@@ -1,8 +1,8 @@
 //app.js
 App({
   data:{
-    appid: "wx498a44099c30c038",
-    secret: "2aa8a634b32b370dd6d398430a25dfdc"
+    appid: "xxx",
+    secret: "xxx"
   },
   onLaunch: function () {
     // 展示本地存储能力
